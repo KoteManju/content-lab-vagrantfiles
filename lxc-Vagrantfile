@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "fgrehm/trusty64-lxc"
-  config.vm.define "db" do |node|
-    node.vm.provider :lxc do |lxc|
+  config.vm.define "app" do |app|
+    app.vm.provider :lxc do |lxc|
       lxc.container_name = 'test'
     end
   end
