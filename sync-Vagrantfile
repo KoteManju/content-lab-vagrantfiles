@@ -5,5 +5,4 @@ Vagrant.configure("2") do |config|
       lxc.container_name = 'app'
     end
   end
-  config.vm.synced_folder '/home/cloud_user/wanderer/app', '/opt/wanderer'
 end
